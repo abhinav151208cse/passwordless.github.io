@@ -19,11 +19,14 @@ errorMessage: string;
   const url = this.router.url;
   this.confirmSignIn(url);
 
+
   }
+
+
 async sendEmailLink(){
 	const actionCodeSettings = {
 	url: 'http://localhost:4200/login',
-	handleCodeInApp: true
+	handle77CodeInApp: true
 
 	};
 	try{
