@@ -26,7 +26,7 @@ errorMessage: string;
 async sendEmailLink(){
 	const actionCodeSettings = {
 	url: 'http://localhost:4200/login',
-	handle77CodeInApp: true
+	handleCodeInApp: true
 
 	};
 	try{
@@ -58,4 +58,7 @@ async confirmSignIn(url){
 	
 	}
 }
+logout() {
+    this.afAuth.auth.signOut();
+  }
 }
